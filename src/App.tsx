@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import supabase from './ultis/supabase'
 import './App.css'
 
@@ -14,6 +14,7 @@ function App() {
   const [notaEditando, setNotaEditando] = useState<Nota | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const editInputRef = useRef<HTMLInputElement>(null)
 
   // Función para leer todas las notas
   const leerNotas = async () => {
@@ -226,6 +227,7 @@ function App() {
                     // Modo edición
                     <div className="flex gap-4 items-center">
                       <input
+                        ref={editInputRef}
                         type="text"
                         defaultValue={nota.nota}
                         onKeyDown={(e) => {
@@ -241,8 +243,9 @@ function App() {
                       />
                       <button
                         onClick={() => {
-                          const input = document.querySelector('input[defaultValue="' + nota.nota + '"]') as HTMLInputElement
-                          actualizarNota(nota.id, input.value)
+                          if (editInputRef.current) {
+                            actualizarNota(nota.id, editInputRef.current.value)
+                          }
                         }}
                         className="px-3 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
                       >
