@@ -60,7 +60,18 @@ const agrupaPorFecha = (actividades: ActividadCompletada[]): SeccionHistorial[] 
 };
 
 export default function ActividadesCompletadasScreen() {
-  const actividadesCompletadas = useAppStore((state) => state.getActividadesCompletadas());
+  const actividades = useAppStore((state) => state.actividades);
+  const actividadesCompletadas = useMemo(() => {
+    const completadas = actividades
+      .filter((actividad) => actividad.estado === 'completada')
+      .sort((a, b) => {
+        const fechaA = a.fechaCompletada?.getTime() ?? 0;
+        const fechaB = b.fechaCompletada?.getTime() ?? 0;
+        return fechaB - fechaA;
+      });
+
+    return completadas;
+  }, [actividades]);
   const reactivarActividad = useAppStore((state) => state.reactivarActividad);
 
   const secciones = useMemo(() => agrupaPorFecha(actividadesCompletadas), [actividadesCompletadas]);
@@ -217,3 +228,4 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
+

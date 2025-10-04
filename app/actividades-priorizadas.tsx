@@ -22,8 +22,29 @@ type CategoriaLista = {
 };
 
 export default function ActividadesPriorizadasScreen() {
-  const quickWins = useAppStore((state) => state.getQuickWins());
-  const tareasLargas = useAppStore((state) => state.getTareasLargas());
+  const actividades = useAppStore((state) => state.actividades);
+  const { quickWins, tareasLargas } = useMemo(() => {
+    const quick: Actividad[] = [];
+    const largas: Actividad[] = [];
+
+    actividades.forEach((actividad) => {
+      if (actividad.estado !== 'pendiente') {
+        return;
+      }
+
+      if (actividad.esQuickWin) {
+        quick.push(actividad);
+      } else {
+        largas.push(actividad);
+      }
+    });
+
+    quick.sort((a, b) => a.fechaCreacion.getTime() - b.fechaCreacion.getTime());
+    largas.sort((a, b) => a.fechaCreacion.getTime() - b.fechaCreacion.getTime());
+
+    return { quickWins: quick, tareasLargas: largas };
+  }, [actividades]);
+
   const completarActividad = useAppStore((state) => state.completarActividad);
   const cancelarActividad = useAppStore((state) => state.cancelarActividad);
   const eliminarActividad = useAppStore((state) => state.eliminarActividad);
@@ -503,3 +524,4 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
   },
 });
+
