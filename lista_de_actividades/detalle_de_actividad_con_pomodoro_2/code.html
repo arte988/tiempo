@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        display: ["Inter"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<div class="flex-grow pb-28">
+<header class="sticky top-0 z-20 flex items-center justify-between border-b border-slate-200/80 bg-background-light/80 p-4 pb-2 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<button class="flex size-10 items-center justify-center rounded-full text-slate-600 hover:bg-slate-200 dark:text-slate-400 dark:hover:bg-slate-800">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h2 class="flex-1 text-center text-lg font-bold text-slate-900 dark:text-white">Actividad</h2>
+<div class="w-10"></div>
+</header>
+<main class="p-4">
+<div class="mb-6 flex items-start justify-between">
+<div>
+<h1 class="text-2xl font-bold text-slate-900 dark:text-white">Revisar el informe de ventas</h1>
+<p class="mt-1 text-slate-600 dark:text-slate-400">Revisar el informe de ventas del equipo de marketing</p>
+</div>
+<div class="relative">
+<button class="flex size-10 items-center justify-center rounded-full text-slate-600 hover:bg-slate-200 focus:bg-slate-200 dark:text-slate-400 dark:hover:bg-slate-800 dark:focus:bg-slate-800">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<div class="absolute right-0 mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none dark:bg-slate-800 z-10">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700" href="#" role="menuitem">Editar</a>
+<a class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-700" href="#" role="menuitem">Cancelar</a>
+<a class="block px-4 py-2 text-sm text-red-600 hover:bg-slate-100 dark:text-red-500 dark:hover:bg-slate-700" href="#" role="menuitem">Eliminar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Pomodoro</h3>
+<div class="mt-4 flex gap-4 text-center">
+<div class="flex-1">
+<div class="rounded-lg bg-slate-200/50 py-4 text-4xl font-bold text-slate-900 dark:bg-slate-800/50 dark:text-white">25</div>
+<div class="mt-2 text-sm text-slate-500 dark:text-slate-400">Minutos</div>
+</div>
+<div class="flex items-center text-4xl font-bold text-slate-400 dark:text-slate-600">:</div>
+<div class="flex-1">
+<div class="rounded-lg bg-slate-200/50 py-4 text-4xl font-bold text-slate-900 dark:bg-slate-800/50 dark:text-white">00</div>
+<div class="mt-2 text-sm text-slate-500 dark:text-slate-400">Segundos</div>
+</div>
+</div>
+<div class="mt-6 grid grid-cols-2 gap-4">
+<button class="flex h-12 w-full items-center justify-center rounded-lg bg-primary text-sm font-bold text-white shadow-sm transition-transform active:scale-95">Iniciar</button>
+<button class="flex h-12 w-full items-center justify-center rounded-lg bg-slate-200 text-sm font-bold text-slate-700 shadow-sm transition-transform active:scale-95 dark:bg-slate-800 dark:text-slate-300">Pausar</button>
+<button class="flex h-12 w-full items-center justify-center rounded-lg bg-slate-200 text-sm font-bold text-slate-700 shadow-sm transition-transform active:scale-95 dark:bg-slate-800 dark:text-slate-300">Repetir</button>
+<button class="flex h-12 w-full items-center justify-center rounded-lg bg-slate-200 text-sm font-bold text-slate-700 shadow-sm transition-transform active:scale-95 dark:bg-slate-800 dark:text-slate-300">Descanso</button>
+</div>
+</div>
+<div>
+<h3 class="mb-2 text-lg font-bold text-slate-900 dark:text-white">Sub-tareas</h3>
+<div class="space-y-2">
+<a class="flex items-center justify-between rounded-lg bg-slate-100 p-4 transition-colors hover:bg-slate-200 dark:bg-slate-800/50 dark:hover:bg-slate-800" href="#">
+<p class="truncate font-medium text-slate-800 dark:text-slate-200">Revisar métricas de la campaña</p>
+<svg class="text-slate-400 dark:text-slate-500" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-slate-100 p-4 transition-colors hover:bg-slate-200 dark:bg-slate-800/50 dark:hover:bg-slate-800" href="#">
+<p class="truncate font-medium text-slate-800 dark:text-slate-200">Preparar presentación de resultados</p>
+<svg class="text-slate-400 dark:text-slate-500" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</a>
+<a class="flex items-center justify-between rounded-lg bg-slate-100 p-4 transition-colors hover:bg-slate-200 dark:bg-slate-800/50 dark:hover:bg-slate-800" href="#">
+<p class="truncate font-medium text-slate-800 dark:text-slate-200">Coordinar reunión con el equipo</p>
+<svg class="text-slate-400 dark:text-slate-500" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
+</svg>
+</a>
+</div>
+</div>
+</main>
+</div>
+<div class="fixed bottom-0 w-full bg-background-light p-4 dark:bg-background-dark pb-28">
+<button class="flex h-14 w-full items-center justify-center rounded-xl bg-green-500 text-lg font-bold text-white shadow-lg transition-transform active:scale-95">Finalizar</button>
+</div>
+<footer class="fixed bottom-0 z-10 w-full border-t border-slate-200/80 bg-background-light/80 py-2 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<nav class="flex justify-around">
+<a class="flex flex-1 flex-col items-center gap-1 p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M56,128a16,16,0,1,1-16-16A16,16,0,0,1,56,128ZM40,48A16,16,0,1,0,56,64,16,16,0,0,0,40,48Zm0,128a16,16,0,1,0,16,16A16,16,0,0,0,40,176Zm176-64H88a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V120A8,8,0,0,0,216,112Zm0-64H88a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V56A8,8,0,0,0,216,48Zm0,128H88a8,8,0,0,0-8,8v16a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V184A8,8,0,0,0,216,176Z"></path>
+</svg>
+<span class="text-xs font-medium">Actividades</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 p-2 text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM224,48V208a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32H208A16,16,0,0,1,224,48ZM208,208V48H48V208H208Z"></path>
+</svg>
+<span class="text-xs font-medium">Hechas</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Zm88-29.84q.06-2.16,0-4.32l14.92-18.64a8,8,0,0,0,1.48-7.06,107.21,107.21,0,0,0-10.88-26.25,8,8,0,0,0-6-3.93l-23.72-2.64q-1.48-1.56-3-3L186,40.54a8,8,0,0,0-3.94-6,107.71,107.71,0,0,0-26.25-10.87,8,8,0,0,0-7.06,1.49L130.16,40Q128,40,125.84,40L107.2,25.11a8,8,0,0,0-7.06-1.48A107.6,107.6,0,0,0,73.89,34.51a8,8,0,0,0-3.93,6L67.32,64.27q-1.56,1.49-3,3L40.54,70a8,8,0,0,0-6,3.94,107.71,107.71,0,0,0-10.87,26.25,8,8,0,0,0,1.49,7.06L40,125.84Q40,128,40,130.16L25.11,148.8a8,8,0,0,0-1.48,7.06,107.21,107.21,0,0,0,10.88,26.25,8,8,0,0,0,6,3.93l23.72,2.64q1.49,1.56,3,3L70,215.46a8,8,0,0,0,3.94,6,107.71,107.71,0,0,0,26.25,10.87,8,8,0,0,0,7.06-1.49L125.84,216q2.16.06,4.32,0l18.64,14.92a8,8,0,0,0,7.06,1.48,107.21,107.21,0,0,0,26.25-10.88,8,8,0,0,0,3.93-6l2.64-23.72q1.56-1.48,3-3L215.46,186a8,8,0,0,0,6-3.94,107.71,107.71,0,0,0,10.87-26.25,8,8,0,0,0-1.49-7.06Zm-16.1-6.5a73.93,73.93,0,0,1,0,8.68,8,8,0,0,0,1.74,5.48l14.19,17.73a91.57,91.57,0,0,1-6.23,15L187,173.11a8,8,0,0,0-5.1,2.64,74.11,74.11,0,0,1-6.14,6.14,8,8,0,0,0-2.64,5.1l-2.51,22.58a91.32,91.32,0,0,1-15,6.23l-17.74-14.19a8,8,0,0,0-5-1.75h-.48a73.93,73.93,0,0,1-8.68,0,8,8,0,0,0-5.48,1.74L100.45,215.8a91.57,91.57,0,0,1-15-6.23L82.89,187a8,8,0,0,0-2.64-5.1,74.11,74.11,0,0,1-6.14-6.14,8,8,0,0,0-5.1-2.64L46.43,170.6a91.32,91.32,0,0,1-6.23-15l14.19-17.74a8,8,0,0,0,1.74-5.48,73.93,73.93,0,0,1,0-8.68,8,8,0,0,0-1.74-5.48L40.2,100.45a91.57,91.57,0,0,1,6.23-15L69,82.89a8,8,0,0,0,5.1-2.64,74.11,74.11,0,0,1,6.14-6.14A8,8,0,0,0,82.89,69L85.4,46.43a91.32,91.32,0,0,1,15-6.23l17.74,14.19a8,8,0,0,0,5.48,1.74,73.93,73.93,0,0,1,8.68,0,8,8,0,0,0,5.48-1.74L155.55,40.2a91.57,91.57,0,0,1,15,6.23L173.11,69a8,8,0,0,0,2.64,5.1,74.11,74.11,0,0,1,6.14,6.14,8,8,0,0,0,5.1,2.64l22.58,2.51a91.32,91.32,0,0,1,6.23,15l-14.19,17.74A8,8,0,0,0,199.87,123.66Z"></path>
+</svg>
+<span class="text-xs font-medium">Configuración</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

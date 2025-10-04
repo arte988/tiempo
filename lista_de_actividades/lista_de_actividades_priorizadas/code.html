@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            display: ["Inter"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="flex flex-col h-screen justify-between">
+<div class="flex-grow overflow-y-auto">
+<header class="sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div class="flex items-center justify-between p-4">
+<div class="w-10"></div>
+<h1 class="text-lg font-bold text-slate-900 dark:text-white text-center">Actividades</h1>
+<button class="w-10 h-10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-3xl"> add_circle </span>
+</button>
+</div>
+</header>
+<main class="p-4 space-y-6">
+<div>
+<h2 class="text-base font-bold text-slate-900 dark:text-white mb-2">5 minutos o menos</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-slate-800/50 p-4 rounded-lg">
+<div class="flex items-start justify-between">
+<div class="flex-1">
+<p class="font-medium text-slate-800 dark:text-white">Revisar correos electrónicos</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">5 minutos</p>
+</div>
+<div class="relative">
+<button class="text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;"> more_vert </span>
+</button>
+<div class="absolute right-0 mt-2 w-48 bg-white dark:bg-slate-800 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 z-20">
+<div class="py-1">
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" href="#">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 0, 'wght' 400;">edit</span>
+                      Editar
+                    </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700" href="#">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 0, 'wght' 400;">cancel</span>
+                      Cancelar
+                    </a>
+<a class="flex items-center gap-3 px-4 py-2 text-sm text-red-500 hover:bg-slate-100 dark:hover:bg-slate-700" href="#">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 0, 'wght' 400;">delete</span>
+                      Eliminar
+                    </a>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4">
+<button class="flex items-center justify-center gap-2 rounded-lg bg-primary/10 dark:bg-primary/20 px-4 py-2 text-sm font-medium text-primary dark:text-white">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 0, 'wght' 500;"> check_circle </span>
+                  Finalizar
+                </button>
+</div>
+</div>
+<div class="bg-white dark:bg-slate-800/50 p-4 rounded-lg">
+<div class="flex items-start justify-between">
+<div class="flex-1">
+<p class="font-medium text-slate-800 dark:text-white">Responder mensajes</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">5 minutos</p>
+</div>
+<div class="relative">
+<button class="text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;"> more_vert </span>
+</button>
+</div>
+</div>
+<div class="mt-4">
+<button class="flex items-center justify-center gap-2 rounded-lg bg-primary/10 dark:bg-primary/20 px-4 py-2 text-sm font-medium text-primary dark:text-white">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 0, 'wght' 500;"> check_circle </span>
+                  Finalizar
+                </button>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-base font-bold text-slate-900 dark:text-white mb-2">Más de 5 minutos</h2>
+<div class="space-y-2">
+<div class="flex items-start justify-between bg-white dark:bg-slate-800/50 p-4 rounded-lg">
+<div class="flex-1">
+<p class="font-medium text-slate-800 dark:text-white">Preparar presentación</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">25 minutos</p>
+</div>
+<div class="relative">
+<button class="text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;"> more_vert </span>
+</button>
+</div>
+</div>
+<div class="flex items-start justify-between bg-white dark:bg-slate-800/50 p-4 rounded-lg">
+<div class="flex-1">
+<p class="font-medium text-slate-800 dark:text-white">Investigar competidores</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">25 minutos</p>
+</div>
+<div class="relative">
+<button class="text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;"> more_vert </span>
+</button>
+</div>
+</div>
+<div class="flex items-start justify-between bg-white dark:bg-slate-800/50 p-4 rounded-lg">
+<div class="flex-1">
+<p class="font-medium text-slate-800 dark:text-white">Planificar próximo sprint</p>
+<p class="text-sm text-slate-500 dark:text-slate-400">25 minutos</p>
+</div>
+<div class="relative">
+<button class="text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;"> more_vert </span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<nav class="border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark p-2">
+<div class="flex justify-around">
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-24" href="#">
+<span class="material-symbols-outlined text-primary"> list_alt </span>
+<span class="text-xs font-medium text-primary">Actividades</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-24 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;"> task_alt </span>
+<span class="text-xs font-medium">Hechas</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 rounded-lg w-24 text-slate-500 dark:text-slate-400" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;"> settings </span>
+<span class="text-xs font-medium">Configuración</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>
